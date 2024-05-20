@@ -1,0 +1,415 @@
+@font-face {
+	font-family: Roboto;
+	src: url(../Roboto/Roboto-Regular.ttf);
+}
+
+* {
+	font-family: Roboto;
+}
+
+header {
+	background-image: url(../img/banner.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+}
+nav {
+	height: 50px;
+}
+.navbar {
+	margin: 1.8rem 8rem;
+	font-size: 20;
+}
+.navbar-brand {
+	padding: 5px;
+}
+.nav-item {
+	padding: 5px;
+	padding-top: 10px;
+}
+.nav-item a {
+	color: #f1f1f1;
+	padding: 0 2rem;
+}
+#nav-daftar {
+	padding: 10px;
+	border-radius: 25px;
+	background-color: rgba(255, 255, 255, 0.15);
+	margin-left: 1rem;
+}
+/* ------------------------------------------------ */
+#header-text {
+	height: 80vh;
+	color: #f1f1f1;
+	margin: 0 8rem;
+	padding-top: 6rem;
+}
+#header-text h1 {
+	font-size: 46px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+#header-text p {
+	font-size: 24;
+}
+#header-text input {
+	width: 20%;
+	outline-style: none;
+	color: #f1f1f1;
+	font-size: 20px;
+	box-shadow: none;
+	padding: 10px 20px;
+	border-radius: 35px;
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 1px;
+}
+#header-text input::placeholder {
+	color: #f1f1f1;
+}
+
+main {
+	border: 1px solid white;
+}
+/* ------------------------------------------------ */
+#milestone .container {
+	margin-top: -3rem;
+	background-color: #f1f1f1;
+	width: 50%;
+	position: absolute;
+	border-radius: 55px;
+	font-size: 20px;
+}
+#milestone ul li {
+	list-style-type: none;
+	font-weight: bold;
+	margin: 5px 4rem 0;
+	color: #252525;
+}
+#milestone ul li span {
+	color: #42629d;
+	font-size: 28px;
+}
+
+/* ------------------------------------------------ */
+#layanan {
+	background-color: #d8e9f3;
+	height: 100vh;
+}
+#layanan .judul h2 {
+	font-weight: bold;
+	font-size: 40px;
+	margin: 8rem 2rem 0;
+}
+#layanan .list-layanan {
+	font-size: 30px;
+	width: 30%;
+}
+#layanan .list-layanan button{
+	font-size: 30px;
+	width: 30%;
+	color: #000000;
+    text-decoration: none;
+	border: none;
+	margin-bottom: 10px;
+	background-color: transparent;
+	justify-content: flex-start;
+}
+#layanan .list-layanan :hover {
+    font-weight: bold;
+}
+
+.container .text {
+	display: none;
+}
+
+.container .text.show {
+	display: block;
+}
+
+/* sub-layanan buttons */
+#dekorasi .sub-layanan .btn,
+#reparasi .sub-layanan .btn,
+#pindahan .sub-layanan .btn,
+#pembersihan .sub-layanan .btn,
+#rakitbarang .sub-layanan .btn,
+#outdoor .sub-layanan .btn {
+    border-radius: 30px;
+    margin: 5px;
+    color: #f1f1f1;
+    background-color: #42629D;
+}
+
+/* content containers */
+#dekorasi-content,
+#reparasi-content,
+#pindahan-content,
+#pembersihan-content,
+#rakitbarang-content,
+#outdoor-content {
+    border-radius: 20px;
+    background-color: #42629D;
+    color: #f1f1f1;
+}
+
+/* content descriptions */
+#dekorasi-content .deskripsi,
+#reparasi-content .deskripsi,
+#pindahan-content .deskripsi,
+#pembersihan-content .deskripsi,
+#rakitbarang-content .deskripsi,
+#outdoor-content .deskripsi {
+    width: 40%;
+}
+
+/* content description titles */
+#dekorasi-content .deskripsi h3,
+#reparasi-content .deskripsi h3,
+#pindahan-content .deskripsi h3,
+#pembersihan-content .deskripsi h3,
+#rakitbarang-content .deskripsi h3,
+#outdoor-content .deskripsi h3 {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* content description paragraphs */
+#dekorasi-content .deskripsi p,
+#reparasi-content .deskripsi p,
+#pindahan-content .deskripsi p,
+#pembersihan-content .deskripsi p,
+#rakitbarang-content .deskripsi p,
+#outdoor-content .deskripsi p {
+    font-size: 20px;
+}
+
+/* image containers */
+#dekorasi-content .img-container,
+#reparasi-content .img-container,
+#pindahan-content .img-container,
+#pembersihan-content .img-container,
+#rakitbarang-content .img-container,
+#outdoor-content .img-container {
+    border-radius: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 24rem;
+}
+
+/* Specific image backgrounds */
+#dekorasi-content .img-container {
+    background-image: url(../img/dekorasi.jpg);
+}
+
+#reparasi-content .img-container {
+    background-image: url(../img/reparasi.jpg);
+}
+
+#pindahan-content .img-container {
+    background-image: url(../img/pindahbarang.png);
+}
+
+#pembersihan-content .img-container {
+    background-image: url(../img/pembersihan.png);
+}
+
+#rakitbarang-content .img-container {
+    background-image: url(../img/rakitbarang.png);
+}
+
+#outdoor-content .img-container {
+    background-image: url(../img/outdoor.png);
+}
+/* ------------------------------------------------ */
+#keunggulan {
+	height: 9rem;
+	background-color: #42629d;
+	color: white;
+}
+#keunggulan h4 {
+	font-size: 24px;
+	letter-spacing: 0.5px;
+	padding-top: 9px;
+}
+/* ------------------------------------------------ */
+#review {
+	background-color: #d8e9f3;
+	height: 100vh;
+}
+#review a {
+	text-decoration: none;
+	color: #3e7fd2;
+	font-weight: bold;
+}
+#review-1,
+#review-2,
+#review-3,
+#review-4 {
+	background-color: #f1f1f1;
+	border-radius: 15px;
+}
+#review-1 .img-container {
+	background-image: url(../img/pembersihan.jpg);
+	background-size: cover;
+	border-radius: 15px 0 0 15px;
+	width: 100%;
+	background-color: white;
+	margin-left: -12px;
+}
+#review-2 .img-container {
+	background-image: url(../img/memotong-rumput.jpeg);
+	background-size: cover;
+	border-radius: 15px 0 0 15px;
+	width: 100%;
+	background-color: white;
+	margin-left: -12px;
+}
+#review-3 .img-container {
+	background-image: url(../img/pindahan.jpg);
+	background-size: cover;
+	border-radius: 15px 0 0 15px;
+	width: 100%;
+	background-color: white;
+	margin-left: -12px;
+}
+#review-4 .img-container {
+	background-image: url(../img/renovasi-atap.jpg);
+	background-size: cover;
+	border-radius: 15px 0 0 15px;
+	width: 100%;
+	background-color: white;
+	margin-left: -12px;
+}
+#lihat-review {
+	padding-left: 5%;
+	margin-top: auto;
+	margin-bottom: 2%;
+	border-radius: 100px;
+	background-color: #f1f1f1;
+}
+/* ------------------------------------------------ */
+#cara-kerja {
+	height: 100vh;
+	background-color: #42629d;
+}
+#cara-kerja .container {
+	border-radius: 20px;
+	background-image: url(../img/cara-kerja.jpg);
+	height: 70vh;
+	width: 60%;
+	background-size: cover;
+}
+#cara-kerja .text-container {
+	height: 28rem;
+	margin-top: 12px;
+	background-color: #f1f1f1;
+	border-radius: 16px;
+}
+
+/*--------------------------------------------*/
+#dapatkan-bantuan {
+	background-color: #d8e9f3;
+}
+
+#btn-list .btn {
+	color: #f1f1f1;
+	padding-left: 5%;
+	margin-top: auto;
+	margin-bottom: 2%;
+	border-radius: 100px;
+	background-color: #42629d;
+}
+
+#btn-list .btn a {
+	color: #f1f1f1;
+	text-decoration: none;
+}
+
+#lihat-layanan {
+	padding-left: 5%;
+	margin-top: auto;
+	margin-bottom: 2%;
+	border-radius: 100px;
+	background-color: #f1f1f1;
+}
+/*--------------------FOOTER------------------*/
+footer {
+	background: #42629d;
+}
+footer a {
+	color: #fff;
+	font-size: 14px;
+	transition-duration: 0.2s;
+}
+footer a:hover {
+	color: #fa944b;
+	text-decoration: none;
+}
+.copy {
+	font-size: 12px;
+	padding: 10px;
+	border-top: 1px solid #ffffff;
+}
+.footer-middle {
+	padding-top: 2em;
+	color: white;
+}
+#gplay-store .footer-pad .list-unstyled {
+	content: url(../img/google-play-badge.png);
+	width: 70%;
+}
+
+/* footer social icons */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left: 0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+/* footer social icons */
+.social-circle li a {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto 0 auto;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	font-size: 15px;
+}
+.social-circle li i {
+	margin: 0;
+	line-height: 30px;
+	text-align: center;
+}
+.social-circle li a:hover i,
+.triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #595959;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+.social-network a {
+	background-color: #f9f9f9;
+}

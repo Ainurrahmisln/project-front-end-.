@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Ambatukang</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+		/>
+		<link
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<!-- Banner & Navbar -->
+		<header class="header d-flex flex-column">
+			<div class="container-fluid">
+				<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#">
+							<img src="../img/logoputih.png" alt="logo" width="80">
+							Ambatukang
+						</a>
+						<ul class="nav justify-content-end">
+							<li class="nav-item">
+								<a class="nav-link" href="../layanan/layanan.html">Layanan</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../daftar/index.html">Masuk</a>
+							</li>
+							<li class="nav-item" id="nav-daftar">
+								<a class="nav-link" href="../task/task.html">Menjadi Tasker</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+				<div id="header-text" class="d-flex flex-column">
+					<h1>
+						Temukan Penyedia <br />
+						Jasa Renovasi & <br />
+						Kebutuhan Rumah Anda
+					</h1>
+					<p>
+						Ubah rumah Anda menjadi tempat yang lebih fungsional, <br />nyaman,
+						dan sesuai dengan gaya hidup Anda. <br />
+						Kami menawarkan jasa, seperti renovasi interior, <br />eksterior,
+						perbaikan struktural dan kebersihan. <br />
+					</p>
+					<!-- <input type="text" placeholder="Cari.." /> -->
+				</div>
+			</div>
+		</header>
+
+		<!-- Main content -->
+		<main class="main d-flex flex-column">
+			<!-- Milestone jumlah pengguna -->
+			<section id="milestone" class="d-flex justify-content-center">
+				<div
+					class="container shadow pt-2 d-flex flex-row justify-content-center align-baseline"
+				>
+					<ul class="d-flex flex-row text-center">
+						<li>
+							<span>100.000+</span><br />
+							Pengguna
+						</li>
+						<li>
+							<span>50.000+</span> <br />
+							Orang Terbantu
+						</li>
+						<li>
+							<span>200+</span> <br />
+							Pekerja Aktif
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Fitur layanan -->
+			<section id="layanan">
+				<div class="container">
+					<div class="judul">
+						<h2>Layanan</h2>
+					</div>
+
+					<form action="#" class="form">
+                    <div id="content" class="container d-flex align-items-center flex-row mt-3">
+                        <div class="list-layanan container d-flex flex-column flex-fill mt-4 pt-5">							
+                            <button class="toggle-button" onclick="toggleVisibility('Dekorasi')">Dekorasi</button>
+                            <button class="toggle-button" onclick="toggleVisibility('Reparasi')">Reparasi</button>
+                            <button class="toggle-button" onclick="toggleVisibility('Pindahan')">Pindahan</button>
+                            <button class="toggle-button" onclick="toggleVisibility('Pembersihan')">Pembersihan</button>
+                            <button class="toggle-button" onclick="toggleVisibility('Rakit Barang')">Rakit Barang</button>
+                            <button class="toggle-button" onclick="toggleVisibility('Outdoor')">Outdoor</button>
+                        </div>
+
+                        <!-- dekorasi--> 
+                        <div class="text show" id="Dekorasi">
+                            <div id="dekorasi" class="container d-flex flex-column">
+                                <div class="sub-layanan container d-flex flex-row mb-3">
+                                    <div class=" btn px-4 py-2 shadow">Mengecat</div>
+                                    <div class=" btn px-4 py-2 shadow">Tata Ruangan</div>
+                                    <div class=" btn px-4 py-2 shadow">Wallpaper</div>
+                                    <div class=" btn px-4 py-2 shadow">Keramik</div>
+                                </div>
+                                
+                                <div id="dekorasi-content" class="shadow container d-flex flex-row p-5">
+                                    <div class="deskripsi container ">
+                                        <h3 class=" mt-3 mb-4 ">Dekorasi</h3>
+                                        <p>Mengecat dinding, memasang wallpaper, menata ruangan dan dekorasi lainnya.</p>
+                                        <p>Termasuk persiapan dan bersih-bersih</p>
+                                    </div>
+                                    <div class="img-container container mx-5 shadow">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <!-- reparasi--> 
+                        <div class="text" id="Reparasi">
+                            <div id="reparasi" class="container d-flex flex-column">
+                                <div class="sub-layanan container d-flex flex-row mb-3">
+                                    <div class=" btn px-4 py-2 shadow">Reparasi Atap</div>
+                                    <div class=" btn px-4 py-2 shadow">Saluran Air dan Pipa</div>
+                                    <div class=" btn px-4 py-2 shadow">Reparasi Dinding</div>
+                                </div>
+                                
+                                <div id="reparasi-content" class="shadow container d-flex flex-row p-5">
+                                    <div class="deskripsi container ">
+                                        <h3 class=" mt-3 mb-4 ">Reparasi</h3>
+                                        <p>Memperbaiki dan memperbarui berbagai aspek rumah yang mengalami
+                                            kerusakan atau keausan.</p>
+                                        <p>Termasuk persiapan dan pembersihan</p>
+                                    </div>
+                                    <div class="img-container container mx-5 shadow">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>		
+                            
+                        <!-- pindahan -->
+                        <div class="text" id="Pindahan">
+                            <div id="pindahan" class="container d-flex flex-column">
+                                <div class="sub-layanan container d-flex flex-row mb-3">
+                                    <div class=" btn px-4 py-2 shadow">Pick Up Barang</div>
+                                    <div class=" btn px-4 py-2 shadow">Sewa gudang penyimpanan</div>
+                                    <div class=" btn px-4 py-2 shadow">Packing & Unpacking</div>									
+                                </div>
+                                
+                                <div id="pindahan-content" class="shadow container d-flex flex-row p-5">
+                                    <div class="deskripsi container ">
+                                        <h3 class=" mt-3 mb-4 ">Pindahan</h3>
+                                        <p>Memperbaiki dan memperbarui berbagai aspek rumah yang mengalami
+                                            kerusakan atau keausan.</p>
+                                        <p>Termasuk persiapan dan pembersihan</p>
+                                    </div>
+                                    <div class="img-container container mx-5 shadow">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                
+                        <!-- pembersihan -->
+                        <div class="text" id="Pembersihan">
+                            <div id="pembersihan" class="container d-flex flex-column">
+                                <div class="sub-layanan container d-flex flex-row mb-3">
+                                    <div class=" btn px-4 py-2 shadow">Rumah</div>
+                                    <div class=" btn px-4 py-2 shadow">Kantor</div>
+                                    <div class=" btn px-4 py-2 shadow">Taman</div>
+                                </div>
+                                
+                                <div id="pembersihan-content" class="shadow container d-flex flex-row p-5">
+                                    <div class="deskripsi container ">
+                                        <h3 class=" mt-3 mb-4 ">Pembersihan</h3>
+                                        <p>Membersihkan Ruangan Anda Hingga kesela- sela Terkecil. Tanpa repot, Anda dapat memesan layanan Permbersihan mulai dari Rumah, kantor, taman dan lainnya.</p>
+                                        <p>Termasuk persiapan dan pembersihan</p>
+                                    </div>
+                                    <div class="img-container container mx-5 shadow">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <!-- rakit barang -->
+                        <div class="text" id="Rakit Barang">
+                            <div id="rakitbarang" class="container d-flex flex-column">
+                                <div class="sub-layanan container d-flex flex-row mb-3">
+                                    <div class=" btn px-4 py-2 shadow">Pasang Gorden</div>
+                                    <div class=" btn px-4 py-2 shadow">Rakit Perabotan</div>
+                                    <div class=" btn px-4 py-2 shadow">Pengeboran Dinding</div>
+                                </div>
+                                
+                                <div id="rakitbarang-content" class="shadow container d-flex flex-row p-5">
+                                    <div class="deskripsi container ">
+                                        <h3 class=" mt-3 mb-4 ">Rakit Barang</h3>
+                                        <p>Merakit perabotan anda yang ada di rumah atau di kantor dengan cepat tanpa repot.</p>
+                                        <p>Termasuk persiapan dan pembersihan</p>
+                                    </div>
+                                    <div class="img-container container mx-5 shadow">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                
+                        <!-- outdoor -->
+                        <div class="text" id="Outdoor">
+                            <div id="outdoor" class="container d-flex flex-column">
+                                <div class="sub-layanan container d-flex flex-row mb-3">
+                                    <div class=" btn px-4 py-2 shadow">Perawatan Rutin</div>
+                                    <div class=" btn px-4 py-2 shadow">Kolam Hias</div>
+                                    <div class=" btn px-4 py-2 shadow">Tanaman Hias</div>
+                                </div>
+                                
+                                <div id="outdoor-content" class="shadow container d-flex flex-row p-5">
+                                    <div class="deskripsi container ">
+                                        <h3 class=" mt-3 mb-4 ">Outdoor</h3>
+                                        <p>Pelaksanaan konstruksi taman, perawatan rutin, perbaikan atau pembaharuan taman sesuai kebutuhan individu pelanggan.</p>
+                                        <p>Termasuk persiapan dan pembersihan</p>
+                                    </div>
+                                    <div class="img-container container mx-5 shadow">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                        
+    
+                    </div>
+                </form>
+				</div>
+			</section>
+
+			<!-- Keunggulan Aplikasi -->
+			<section id="keunggulan">
+				<div
+					class="container d-flex flex-row justify-content-center align-items-center ps-5"
+				>
+					<div
+						class="container d-flex flex-row align-items-center m-3"
+						id="kepuasan-pelanggan"
+					>
+						<div class="img-container">
+							<img src="../img/checkmark.png" alt="checkmark" width="60px" />
+						</div>
+						<div class="container ms-2">
+							<h4>Kepuasan Pelanggan</h4>
+							<p>
+								Kami akan bekerja sampai <br />
+								anda merasa puas
+							</p>
+						</div>
+					</div>
+					<div
+						class="container d-flex flex-row align-items-center m-3"
+						id="tukang-profesional"
+					>
+						<div class="img-container">
+							<img src="../img/checkmark.png" alt="checkmark" width="60px" />
+						</div>
+						<div class="container ms-2">
+							<h4>Tukang Professional</h4>
+							<p>
+								Kami mempekerjakan tukang <br />
+								berpengalaman dan terpercaya
+							</p>
+						</div>
+					</div>
+					<div
+						class="container d-flex flex-row align-items-center m-3"
+						id="pelayanan-ramah"
+					>
+						<div class="img-container">
+							<img src="../img/checkmark.png" alt="checkmark" width="60px" />
+						</div>
+						<div class="container ms-2">
+							<h4>Pelayanan Ramah</h4>
+							<p>
+								Kami siap melayani <br />
+								anda setiap hari
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Review Pengguna -->
+			<section id="review" class="d-flex">
+				<div
+					class="container d-flex flex-column justify-content-center align-items-center"
+				>
+					<div class="container">
+						<h2>Review Pengguna</h2>
+					</div>
+					<div class="container d-flex flex-row m-5">
+						<div
+							id="review-1"
+							class="container d-flex flex-row shadow mx-5 my-2"
+						>
+							<div class="img-container"></div>
+							<div class="container d-flex flex-column p-4">
+								<h4>Ami Rahmi</h4>
+								<h5><a href="#">Pembersihan Rumah</a></h5>
+								<p>
+									Ngga nyesel sih coba nyewa jasa disini. Hasilnya memuaskan dan
+									bersihnya merata dari ruang tamu sampai kamar mandi. Sangat
+									recommended!
+								</p>
+							</div>
+						</div>
+						<div
+							id="review-2"
+							class="container d-flex flex-row shadow mx-5 my-2"
+						>
+							<div class="img-container"></div>
+							<div class="container d-flex flex-column p-4">
+								<h4>Jason Susanto</h4>
+								<h5><a href="#">Memotong Rumput</a></h5>
+								<p>
+									Baru tau ada website kaya gini wkwk. Udah susah-susah cari
+									tukang tiap mau bersihin taman, ternyata ada yang lebih
+									gampang.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="container d-flex flex-row">
+						<div
+							id="review-3"
+							class="container d-flex flex-row shadow mx-5 my-2"
+						>
+							<div class="img-container"></div>
+							<div class="container d-flex flex-column p-4">
+								<h4>Jeki Lenganmu</h4>
+								<h5><a href="#">Pindahan</a></h5>
+								<p>
+									Baru pindah rumah dan coba pake jasa ini. Sehari langsung
+									selesai dan mereka juga bantu beresin. Hasilnya rapi dan
+									bersih banget.
+								</p>
+							</div>
+						</div>
+						<div
+							id="review-4"
+							class="container d-flex flex-row shadow mx-5 my-2"
+						>
+							<div class="img-container"></div>
+							<div class="container d-flex flex-column p-4">
+								<h4>Wang Jing Jie</h4>
+								<h5><a href="#">Reparasi Atap</a></h5>
+								<p>
+									Harga nya normal buat benerin atap tapi bedanya ini tinggal
+									pesen gausah cari tukang sendiri
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="container d-flex justify-content-center mt-5">
+						<a href="#">
+							<div id="lihat-review" class="btn px-4 py-2 mx-1 shadow">
+								Lihat semua review
+								<img
+									src="../img/arrow-right.png"
+									alt=""
+									width="20px"
+									class="ms-2"
+								/>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Cara Kerja -->
+			<section id="cara-kerja" class="d-flex align-items-center">
+				<div class="container d-flex justify-content-end shadow">
+					<div
+						class="text-container d-flex flex-column justify-content-center shadow p-5"
+					>
+						<h4>Cara kerja</h4>
+						<ol>
+							<li class="my-4">Pilih layanan yang ingin digunakan</li>
+							<li class="my-4">Isi alamat dan detail perkerjaan</li>
+							<li class="my-4">Cek daftar tukang dan kisaran harga</li>
+							<li class="my-4">Pesan tukang secepatnya</li>
+							<li class="my-4">
+								Konsultasi, tips dan review dalam satu tempat
+							</li>
+						</ol>
+					</div>
+				</div>
+			</section>
+
+			<!-- Dapatkan Bantuan -->
+			<section id="dapatkan-bantuan" class="d-flex align-items-center">
+				<div class="container my-4">
+					<br />
+					<h4><b>Dapatkan bantuan sekarang</b></h4>
+					<br />
+					<div id="btn-list" class="container">
+						<div class="btn px-4 py-2 mx-1 shadow">
+							<a href="../task/task.html">Pemasangan Barang</a>
+						</div>
+						<div class="btn px-4 py-2 mx-1 shadow">
+							<a href="../task/task.html">Pemasangan TV</a>
+						</div>
+						<div class="btn px-4 py-2 mx-1 shadow">
+							<a href="../task/task.html">Perakitan Furniture</a>
+						</div>
+						<div class="btn px-4 py-2 mx-1 shadow">
+							<a href="../task/task.html">Pembersihan Apartemen</a>
+						</div>
+						<div class="btn px-4 py-2 mx-1 shadow">
+							<a href="../task/task.html">Perawatan Rumput</a>
+						</div>
+						<div class="btn px-4 py-2 mx-1 shadow">
+							<a href="../task/task.html">Tata Ruangan</a>
+						</div>
+						<div class="btn px-4 py-2 mx-1 shadow">
+							<a href="../task/task.html">Pekerjaan Halaman</a>
+						</div>
+						<div class="btn px-4 py-2 mx-1 shadow">
+							<a href="../task/task.html">Membuang sampah perabotan</a>
+						</div>
+					</div>
+					<div class="container">
+						<a href="../layanan/layanan.html">
+							<div id="lihat-layanan" class="btn px-4 py-2 mx-1 shadow">
+								Lihat semua layanan
+								<img
+									src="../img/arrow-right.png"
+									alt=""
+									width="20px"
+									class="ms-2"
+								/>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="mainfooter" role="contentinfo">
+			<div class="footer-middle">
+				<div class="container">
+					<h5>Ambatukang</h5>
+					<br /><br />
+					<div class="row">
+						<div class="col-md-3">
+							<h5>Ikuti Kami</h5>
+							<ul class="social-network social-circle">
+								<li>
+									<a href="#" class="icoFacebook" title="Facebook"
+										><i class="fa fa-facebook"></i
+									></a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/ajrilfatah/" class="icoInstagram" title="Instagram"
+										><i class="fa fa-instagram"></i
+									></a>
+								</li>
+								<li>
+									<a href="#" class="icoTwitter" title="Twitter"
+										><i class="fa fa-twitter"></i
+									></a>
+								</li>
+								<li>
+									<a href="#" class="icoLinkedin" title="Linkedin"
+										><i class="fa fa-linkedin"></i
+									></a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-md-3 col-sm-6">
+							<!--Column1-->
+							<div class="footer-pad">
+								<h5>Jelajahi</h5>
+								<ul class="list-unstyled">
+									<li><a href="../task/task.html">Menjadi Tasker</a></li>
+									<li><a href="../layanan/layanan.html">Semua Layanan</a></li>
+									<li>
+										<a href="../tukang elit/tukang_elit.html">Tukang Elit</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6">
+							<!--Column1-->
+							<div class="footer-pad">
+								<h5>Perusahaan</h5>
+								<ul class="list-unstyled">
+									<li><a href="../tentangkami/index.html">Tentang Kami</a></li>
+									<li><a href="#">Karir</a></li>
+									<li><a href="../blog/blog.html">Blog</a></li>
+									<li><a href="#">Syarat & Ketentuan</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6">
+							<!--Column1-->
+							<div id="gplay-store">
+								<div class="footer-pad">
+									<h5>Unduh Aplikasi Kami</h5>
+									<p>Selesaikan Daftar Tugas Anda Dimanapun Anda Berada</p>
+									<ul class="list-unstyled">
+										<li><a href="#"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12 copy">
+							<p class="text-center">&copy; Copyright 2024 - AmbaCorp.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+		<script src="main.js"></script>
+	</body>
+</html>
