@@ -1,0 +1,314 @@
+@font-face {
+	font-family: Roboto;
+	src: url(../Roboto/Roboto-Regular.ttf);
+}
+
+* {
+	font-family: Roboto;
+}
+#style {
+    background-color: #42629d;
+}
+
+header {
+	background-color: white;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 15vh;
+}
+
+.navbar {
+    margin: 1.8rem 8rem;
+    font-size: 20;
+}
+.navbar-brand {
+    padding: 5px;
+    color: black;
+}
+.navbar a {
+	font-size: 30px;
+}
+
+
+#tahap .container {
+	background-color: #d8e9f3;
+	height: 90vh;
+	width: 700vh;
+	background: linear-gradient(to bottom, #d8e9f3, white); 
+	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#tahap .content {
+	background-color: white;
+	margin: auto;
+	border-radius: 25px;
+	height: 60vh;
+	width: 110vh;
+}
+
+#tahap .judul h4 {
+	font-weight: bold;
+	font-size: 40px;
+	margin: 5vh;
+}
+
+#tahap .text-nama input {
+	margin-bottom: 50px;
+}
+
+#tahap .text-area select {
+	
+	margin-bottom: 50px;
+}
+#tahap .text-area .tempat option {
+	font-size: 20px;
+}
+#tahap .text-keahlian .layanan option {
+	font-size: 20px;
+}
+
+#tahap .harga {
+	margin-bottom: 5px;
+}
+ 
+#tahap .btn-a {
+	text-align: center;
+	padding-right: 10vh;
+}
+
+#tahap .btn-a button{
+	background-color: #42629d;
+	color: white;
+}
+/*--------------------Footer & text-------------------*/
+#footer {
+    background-color: white;
+    height: 100vh;
+	background: linear-gradient(to top, to bottom, #d8e9f3, white); /* Ubah warna sesuai keinginan Anda */
+	color: black; /* Warna teks di atas gradasi */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#footer .deskripsi {
+
+    justify-content: center;
+    align-items: center;
+
+    
+}
+#footer .deskripsi h2 {
+	padding-top: 3vh;
+    font-size: 30px;
+    text-align: center;
+    
+}
+#footer .deskripsi .gambar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .deskripsi .garis-content {
+    padding-top: 10vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .deskripsi-akhir h1 {
+    padding-top: 10vh;
+    padding-left: 42vh;
+	padding-right: 20vh;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+	flex-direction: column;
+	justify-content: center;
+
+    
+}
+#footer .text p {
+    padding-bottom: 5vh;
+    padding-top: 1vh;
+    padding-left: 15vh;
+    font-size: 25px;
+    text-align: center;
+}
+
+/*--------------------text-------------------*/
+
+
+#Ambatukang .gam {
+	background-image: url(tukang.png);
+    height: 50vh;
+	width: 700vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#text {
+	margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#text .isi {
+    background-color: white;
+    height: 80vh;
+	padding-top: 5vh;
+}
+
+#text .isi h1 {
+    font-weight: bold;
+    font-size: 50px;
+
+}
+
+#text .isi p {
+	padding-bottom: 5vh;
+    margin-right: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#text .isi .garis-content {
+    padding-top: 20vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------end text-------------------*/
+
+
+.bubble-2 {
+    display: flex;
+    max-width: 150rem;
+    padding: 10px;
+    margin: 0 10px;
+    margin-top: 20px;
+}
+#profile-container-2 {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 500px;
+    height: 500px;
+    justify-content: end;
+    justify-items: end;
+    content: url(./kiki.png);
+}
+.bubble-2 p {
+    font-size: 25px;
+    margin-left: 20px;
+    text-align: end;
+	padding-right: 5vh ;
+}
+
+.nama h6 {
+  font-size: 30px;
+  width: 70vh;
+  height: 5vh;
+  padding-left: 40vh;
+  padding-bottom: 10vh;
+}
+ .garis-content {
+    padding-top: 20vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+
+/*--------------------centang-------------------*/
+#style {
+    background-color: #42629d;
+}
+
+header {
+	background-color: white;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 25h;
+}
+
+.navbar {
+    margin: 1.8rem 8rem;
+    font-size: 20;
+}
+.navbar-brand {
+    padding: 5px;
+    color: black;
+}
+.navbar a {
+	font-size: 30px;
+}
+
+#centang {
+    background-color: #d8e9f3;
+    height: 87vh;
+}
+#centang .judul h5 {
+    font-weight: bold;
+	font-size: 40px;
+	margin: 5vh;
+}
+.container {
+	display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#content {
+    background-color: white;
+    border-radius: 25px;
+    margin: 15vh;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+}
+
+#content .gift {
+    margin-right: 70px;
+	text-align: justify;
+	padding-left: 30px;
+	height: 15vh;
+  
+}
+#content .gift img {
+    width: 200px; 
+    height: auto
+}
+
+#content .text p {
+    font-size: 20px;
+    margin: 5vh;
+    max-height: 1vh;
+}
+ header .background img{
+    width: 100vh;
+ }
+
+
+
+
+
+
+
+
+
